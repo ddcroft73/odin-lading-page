@@ -1,0 +1,3 @@
+# CSS Project
+
+A simple use of CSS. It's not bad for my first project following a design plan. As you can see, I have no visual creativity,but I did manage to get pretty close to the assignment. I know I hacked together a lot of the CSS, and its just not very clean. But by God I succeeded! And a few days ago I couldn't even get flexBox to work at all. Will work on the use and cleanlness of CSS code.

@@ -1,0 +1,272 @@
+* {
+    border: 0px solid black;
+    margin:0;
+}
+
+body {
+     font-family: "Roboto";
+     background-color: gray;     
+} 
+
+/* Container for everything, entire page and contents. Allows me to add other 
+flex conatimers in a column config to stack the sections.  And centers all the divs*/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page-container {
+    justify-content: center;
+    align-content: center;
+    /* THis encloses everything to give the page a solid bg.. I dont really understand yet
+    but it works best this way. There doesnt need to be any CSS in here.*/
+}
+
+/*Navbar logo and links*/
+.nav {   
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex: 1 auto;
+   background-color: #1F2937;
+   width: 1400px;
+   height: 72px;  
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   border-bottom: 1px solid black;
+}
+.header-logo { 
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 600;
+}
+ul { /* top links */
+    display: flex;
+    list-style-type: none;
+    gap: 26px;
+    font-size: 14px;
+    color: #E5E7EB;
+}
+/*End NAVBAR*/
+
+/* Hero text Section*/
+.hero
+ {
+   background-color: #1F2937;
+   display: flex;
+   /* Center contents*/
+   justify-content: center;
+   align-items: center;   
+   height: 420px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+
+/* center boz with image on right awesome site on left.*/
+.hero-container {
+    display: flex;
+    flex: 0 auto;  
+    height: 220px;
+    width: 970px;
+}
+.left{
+    flex: 1    ;
+    color: white;
+}
+.headline {
+   color: #F9FAF8;
+   font-size: 42px;
+   font-weight: 600;
+   margin-right: 20px;
+}   
+.text-left {
+    color: #E5E7EB;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+button.signup {
+    background-color: #3882F6;
+    border: none;
+    color: white;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+.signup:active {
+    border: 1px solid lightgray;
+}
+.right {
+    display: flex;
+    color: #E5E7EB;
+    justify-content: center;
+    align-items: center;   
+    flex: 1;
+    background-color: dimgrey;
+    border-radius: 8px;
+}
+/* END Hero Section*/
+
+/* Middle section with images*/
+.mid-title {
+    color: #1F2937;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.middle {
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    flex: 0 auto;  
+    height: 330px;
+    padding-top: 30px;
+    background-color: white;
+    
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.middle-title {
+    display:     flex;
+    font-size:   30px;
+    font-weight: 600;
+    
+}
+.image{
+    height: 150px;
+    width:  150px;
+    border: 4px solid #3882F6;
+    border-radius: 12px;
+    margin-top: 0px;
+}
+.image-holder {
+    font-weight: 100;
+}
+.text {
+    margin-top:15px;
+    text-align: center;
+    width: 150px;
+}
+/* END MIDDLE SECTION*/
+
+/* Bottom quote in gray*/
+.quote-container {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    /* Center contents*/
+    justify-content: center;
+    align-items: center;   
+    height: 300px;
+    border-radius: 8px;
+}
+.quote {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 100;
+    flex: 0 auto;  
+    height: 150px;
+    width: 770px;
+}
+.signature {
+    font-size: 30px;
+    font-weight: 400;
+    align-self: end;
+    width: 500px;
+}
+
+.signup-container {
+    background-color: white;
+    display: flex;
+    /* Center contents*/
+    justify-content: center;
+    align-items: center;   
+    height: 350px;
+    border: 0px dotted black;
+    border-radius: 8px;;
+}
+.signup-info {
+    background-color: #3882F6;
+   /* flex: 0 auto;  */
+    height: 150px;
+    width: 1000px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.sign-bold {
+   color: white;
+   font-size: 22px;
+   font-weight: 400;
+}
+.sign-text {    
+   color: lightgray;
+   font-size: 16px;
+   font-weight: 100;
+
+}
+button.signup-2 {
+    background-color: #3882F6;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .signup-2:active {
+      border: 1px solid lightgray;
+  }
+
+.footer {    
+    background-color: #1F2937;
+    height: 72px;
+    border: 1px solid black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.copyright-info {   
+    color: lightgray;
+    font-weight: 100;
+}
+
+
+/* link colors and effects */
+a {
+    color: #E5E7EB;
+    text-decoration: none; 
+    
+}
+a:hover{
+    color: #1F2937;
+    background-color: #E5E7EB;
+    width: 15px;
+    height: 10px;
+}
